@@ -5,13 +5,30 @@ using namespace std;
 int main()
 {
     int x;
-    while (x!=1)
+    int pw;
+    x=15;
+    cout << "HAXXXX" << endl;
+    while (pw!=x)
     {
-        cin >> x;
-        if (x!=1)
+        cout << "type correct password pw:";
+        cin >> pw;
+        cout << endl;
+        if (pw!=x)
         {
             cout << "Zugriff verwehrt" << endl;
             cout << "erneut versuchen" << endl;
+            if(pw<x)
+            {
+                cout << "Passwort ist größer!" << endl;
+            }
+            if(pw>x)
+            {
+                cout << "Passwort ist kleiner!" << endl;
+            }
+            //if(pw== "quit" )
+            //{
+            //    return(0);
+            //}
         }
     }
     
@@ -25,6 +42,10 @@ int main()
     
     cout << x << endl;
    return 0;
+}
+
+ 
+
 }
 
  
